@@ -1,0 +1,15 @@
+{
+  "name": "qb-webpack-intro",
+  "version": "1.0.0",
+  "description": "A presentation that introduces why and how webpack is introduced into the workflow of Questback R&D Nordic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arne Hassel <arne.hassel@gmail.com> (http://icanhasweb.net/)",
+  "license": "ISC",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "reveal": "0.0.4"
+  }
+}

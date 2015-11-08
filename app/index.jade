@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title webpack as part of the workflow in Questback R&D Nordic - By Arne Hassel, November 2015
+ 
+    meta(name="description" content="A presentation of webpack as it's going to be used in Questback R&D Nordic")
+    meta(name="author" content="Arne Hassel")
+ 
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+ 
+    meta(name="viewport" content="width=device-width,"
+                                +"initial-scale=1.0,"
+                                +"maximum-scale=1.0,"
+                                +"user-scalable=no")
+ 
+    link(rel="stylesheet" href="index.css")
+  body
+    .reveal
+      .slides
+        section#start
+          h1 webpack as part of the workflow in Questback R&D Nordic
+          p By Arne Hassel, November 2015
+        section#motivation
+          h2 How it was
+          ul
+            li Separate systems for including JS-files
+            li.fragment A lot of things to remember when creating new applications
+            li.fragment No good way of using features in ES2015
+            li.fragment Not possible to utilize TypeScript easily
+            li.fragment Need to specify where lib-files reside
+        section#roadmap
+          h2 How it should be
+          ul
+            li Only changes in configuration should separate how different versions include their JS-files
+            li.fragment Easy to include new files and features
+            li.fragment Easy to test
+        section#webpack
+          h2 Why webpack
+          ul
+            li Pros
+              ul
+                li Easy to set up and extend
+                li Beloved by community
+                li Has plugins for functionality we need now or are going to need (Optimization for distribution, ES2015, TypeScript)
+            li.fragment Cons
+              ul
+                li Documentation is not top-notch (but mostly good enough)
+                li A five-man endeavor, no support by any big corporations
+            li.fragment Worst case scenario
+              ul
+                li Need to migrate to another tool; should not be too difficult (depends on why we need to migrate)
+        section#code
+          h2 Code
+        section#thankyou
+          h2 Thank you for your attention
+          ul
+            li 
+              a(href="http://qb-dev-web2.questback.local/client/app/styleguide/#/#webpack") Styleguide
+            li
+              a(href="https://www.youtube.com/watch?v=RKqRj3VgR_c") Introduction to webpack by Jeremy Lund
+            li
+    script(src="/index.js")
